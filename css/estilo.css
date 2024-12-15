@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Reset básico para remover padding e margin padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:#f7f700;;
+  }
+
+  button {
+    flex: 1;              /* Faz os botões ocuparem o mesmo espaço */
+    padding: 10px;        /* Ajusta o tamanho interno dos botões */
+    cursor: pointer;      /* Muda o cursor para indicar clicabilidade */
+    background-color: #f7f700;
+  }
+
+  /* Estilização do cabeçalho */
+  .menu-grande {
+    margin-top: 40px;
+    background-color: #9706b8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Logo */
+  .logo {
+    display: flex;             /* Alinha elementos horizontalmente */
+    align-items: center;       /* Alinha verticalmente ao centro */
+  }
+  
+  .logo img {
+    width: 40px;               /* Ajuste o tamanho da imagem conforme necessário */
+    height: 40px;
+    margin-right: 10px;        /* Espaço entre a imagem e o texto */
+  }
+  
+  .logo-text {
+    font-size: 1.5em;          /* Tamanho da fonte */
+    font-weight: bold;         /* Texto em negrito */
+    color: #f7f700;            /* Cor do texto */
+  }
+  
+
+.menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color:#9706b8; 
+  text-align:right;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+    /* Ajuste do nav para alinhar corretamente com o logo */
+}
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinhamento horizontal */
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: #f7f700;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.nav ul li a:hover {
+    background-color: white;
+    color: #9706b8;
+    border-radius: 4px;
+}
+
+
+/* .menuButton{
+    background-color: #f7f700;
+    color: #000000;
+    padding: 8px 10px;
+    border: #000000 1px solid;
+    border-radius: 50%;
+    font-size: large;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    display: none; *//* Ocultar no desktop */
+/*} */
+
+/* Container principal */
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;                /* Quebra linha se não couber */
+  gap: 20px;                      /* Espaçamento entre os cartões */
+  justify-content: space-around;  /* Distribui os cartões */
+}
+
+/* Cartão do produto */
+.card-produto {
+  background-color: white;      /* Cor de fundo do cartão */
+  color: #9706b8;                   /* Cor do texto */
+  border-radius: 10px;            /* Bordas arredondadas */
+  width: 180px;                   /* Largura fixa dos cartões */
+  padding: 15px;                  /* Espaçamento interno */
+  text-align: center;             /* Centraliza texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Imagem do produto */
+.card-produto img {
+  width: 100%;                    /* Imagem ocupa toda a largura */
+  height: auto;                   /* Mantém a proporção */
+  border-radius: 10px;            /* Bordas arredondadas */
+}
+
+/* Estilo do preço */
+.preco {
+  font-size: 1.2em;               /* Tamanho da fonte */
+  margin: 10px 0;                 /* Espaçamento acima e abaixo */
+}
+
+/* Botão deletar */
+.deletar-produto {
+  background-color: #ff4444;      /* Cor do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.visual{
+  background-color: #9706b8;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px #f7f700(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+.loja{
+    background-color: #9706b8;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px #f7f700(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.produto{
+    background-color: #9706b8;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px #f7f700(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+ 
+/* Estilos gerais para a seção de contato */
+.contato {
+    background-color: #9706b8;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 80%;
+   
+    margin: 0 auto;
+    margin-top: 120px;
+    box-shadow: 0 4px 8px #f7f700(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Estilos para os rótulos (labels) */
+  form label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilos para os campos de entrada */
+  form input, form select, form textarea :not(form input[type="checkbox"]){
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+  }
+  
+  /* Estilo para o botão de envio */
+  form input[type="submit"] {
+    background-color: #f7f700;;
+    color: #f7f700;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #f7f700;
+  }
+
+  .botoes-formulario {
+    display: flex;        /* Ativa o Flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os botões */
+    gap: 10px;            /* Espaçamento entre os botões */
+  }
+  
+  
+
+  /* Contêiner para agrupar os dois campos */
+.campos-lado-a-lado {
+  display: flex;                /* Ativa Flexbox */
+  gap: 20px;                    /* Espaçamento entre os campos */
+  
+}
+
+/* Ajuste individual dos campos */
+.campos-lado-a-lado .campo-formulario {
+  flex: 5;                      /* Faz cada campo ocupar metade do espaço */
+ 
+}
+
+  /* Estilos para a mensagem de status */
+  #status {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #080808;
+  }
+  
+  .erro {
+    border: 2px solid red;
+  }
+  
+
+/* Estilização do Footer */
+.rodape {
+    background-color: #9706b8;  /* Cor de fundo */
+    color: #f7f700;  /* Cor do texto */
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .rodape .logo-rodape img {
+    height: 50px;  /* Altura do logotipo */
+    margin-bottom: 1rem;
+  }
+  
+  .rodape p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .rodape small {
+    font-size: 0.9rem;
+    color: #f7f700; /* Cor mais clara para o texto adicional */
+  }
+  

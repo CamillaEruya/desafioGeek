@@ -1,0 +1,40 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "descricao": "Arcane",
+      "imagem": "img/arcane1.png",
+      "preco": "120,00"
+    },
+    {
+      "id": 2,
+      "descricao": "Arcane",
+      "imagem": "img/arcane2.png",
+      "preco": "180,00"
+    },
+    {
+      "id": 4,
+      "descricao": "LOL",
+      "imagem": "img/lol2.png",
+      "preco": "120,00"
+    },
+    {
+      "descricao": "teste",
+      "imagem": "img/arcane2.png",
+      "preco": "10",
+      "id": 5
+    },
+    {
+      "descricao": "teste 2",
+      "imagem": "img/arcane1.png",
+      "preco": "200",
+      "id": 6
+    },
+    {
+      "descricao": "erwer",
+      "imagem": "img/lol2.png",
+      "preco": "23",
+      "id": 9
+    }
+  ]
+}

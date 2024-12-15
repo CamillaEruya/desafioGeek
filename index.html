@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraGeek</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        
+        <script src="./js/mostrarProduto.js" type="module" defer></script>
+        <script src="./js/cadastrarCard.js" type="module" defer></script>
+    </head>
+    <body>
+        <header class="menu-grande">
+            <div class="logo">
+                <img src="/img/star.ico" alt="AluraGeek">  
+                <span class="logo-text">AluraGeek</span>
+            </div>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <div id="home">
+            <section id="produto-lista" class="visual">    
+              <h2>Meus Produtos:</h2>
+              <ul class="produtos-container" data-lista>
+              </ul>
+            </section> 
+          </div>
+                 
+                    <!-- Seção do Formulário -->
+          <div id="cadastro">
+            <section id="produto-cadastro" class="cadastro">
+                &nbsp;
+                <div class="produto">
+                <h2>Adicionar Produto</h2>
+                              
+              <form id="form-adicionar-produto" data-formulario>
+                <div class="campo-formulario">
+                  <label for="nome">Nome do Produto</label>
+                  <input type="text" id="nome" name="nome" required data-descricao>
+                </div>
+          
+                <div class="campos-lado-a-lado">
+                    <div class="campo-formulario">
+                      <label for="preco">Preço</label>
+                      <input type="number" id="preco" name="preco" required min="0" step="0.01" data-preco>
+                    </div>
+                  
+                    <div class="campo-formulario">
+                      <label for="imagem">Nome da Imagem </label>
+                      <input type="text" id="imagem" name="imagem" placeholder="Imagem" required data-imagem>
+                    </div>
+                  </div>
+          
+                <div class="botoes-formulario">
+                  <button type="submit" class="adicionar">Adicionar</button>
+                  <button type="reset" class="adicionar">Limpar</button>
+                </div>
+              </form>
+            </div>
+            </section>
+          </div>
+                
+            
+          <section id="contato" class="apresentacao">
+              &nbsp;
+              <div class="contato">
+                  <h2>Contato</h2>
+                  <form id="contatoForm">
+                      <label for="nome">Nome:</label>
+                      <input type="text" id="nome" name="nome" required>
+              
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+              
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+              
+                      <button id="enviarContatobutton" type="button" class="button">Enviar</button>
+                  </form>
+              
+                  <p id="status" style="display:none;"></p>
+              </div>
+          </section>
+        </main>
+        
+    </body>
+    <footer class="rodape">
+        <div class="logo-rodape">
+          <img src="/img/star.ico" alt="Logotipo AluraGeek">
+        </div>
+        <p>Desenvolvido por Camilla Eruya</p>
+        <small>&copy; 2024 AluraGeek. Todos os direitos reservados.</small>
+      </footer>
+</html>
