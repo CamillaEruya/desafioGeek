@@ -21,7 +21,7 @@ img/print1.png
 
 <img src="./img/print1.png">
 <img src="./img/print2.pg.png">
-<img src="./desafio/img/imprimirt3.png">
+<img src="./img/print3.png">
 <img src="./desafio/img/imprimir4.png">
 <img src="./desafio/img/imprimir5.png">
 <img src="./desafio/img/imprimir6.png">
