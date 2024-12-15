@@ -20,7 +20,7 @@ https://github.com/CamillaEruya/desafioGeek/tree/main/img
 img/print1.png
 
 <img src="./img/print1.png">
-<img src="./desafio/img/imprimir2.png">
+<img src="./img/print2.pg.png">
 <img src="./desafio/img/imprimirt3.png">
 <img src="./desafio/img/imprimir4.png">
 <img src="./desafio/img/imprimir5.png">
