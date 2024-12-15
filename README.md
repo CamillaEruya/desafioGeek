@@ -16,7 +16,9 @@ Criar um marketing que consiste em criar cards (loja) e a criação pelo usuario
 ## Imagens Projeto
 
 https://github.com/CamillaEruya/desafioGeek/tree/main/img
-<img src="./img/imprimir1.png">
+
+
+<img src="../img/impimir1.png">
 <img src="./desafio/img/imprimir2.png">
 <img src="./desafio/img/imprimirt3.png">
 <img src="./desafio/img/imprimir4.png">
